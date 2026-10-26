@@ -1,0 +1,2166 @@
+{
+  "at": "2026-10-26T14:04:58.706313",
+  "command": [
+    "./pressure-candidate"
+  ],
+  "exit_code": 0,
+  "stderr": "",
+  "result": {
+    "kind": "real_cuda_checkpoint_stream_pressure",
+    "status": "passed",
+    "pressure_device": 1,
+    "target_free_bytes": 268435456,
+    "pressure_arena_bytes": 20504444928,
+    "requested_workers": 4096,
+    "completed_workers": 4096,
+    "multi_device": false,
+    "worker_entries": 4096,
+    "worker_exits": 4096,
+    "created": 4096,
+    "destroyed": 4096,
+    "live": 0,
+    "copies": 8192,
+    "events_created": 0,
+    "events_destroyed": 0,
+    "events_live": 0,
+    "nonblocking_creates": 4096,
+    "timing_disabled_events": 0,
+    "device_restore_errors": 0,
+    "value_errors": 0,
+    "api_errors": 0,
+    "first_api_error": null,
+    "runtime_version": 13000,
+    "driver_version": 13000,
+    "elapsed_s": 0.720435,
+    "memory_samples": [
+      {
+        "phase": "preflight",
+        "after_workers": 0,
+        "device": 0,
+        "free_bytes": 20337393664,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "preflight",
+        "after_workers": 0,
+        "device": 1,
+        "free_bytes": 20774977536,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "warm",
+        "after_workers": 0,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "warm",
+        "after_workers": 0,
+        "device": 1,
+        "free_bytes": 20772880384,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "pressure",
+        "after_workers": 0,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "pressure",
+        "after_workers": 0,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 32,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 32,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 64,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 64,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 96,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 96,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 128,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 128,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 160,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 160,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 192,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 192,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 224,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 224,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 256,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 256,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 288,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 288,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 320,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 320,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 352,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 352,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 384,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 384,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 416,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 416,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 448,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 448,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 480,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 480,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 512,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 512,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 544,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 544,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 576,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 576,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 608,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 608,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 640,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 640,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 672,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 672,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 704,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 704,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 736,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 736,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 768,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 768,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 800,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 800,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 832,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 832,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 864,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 864,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 896,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 896,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 928,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 928,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 960,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 960,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 992,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 992,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1024,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1024,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1056,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1056,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1088,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1088,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1120,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1120,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1152,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1152,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1184,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1184,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1216,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1216,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1248,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1248,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1280,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1280,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1312,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1312,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1344,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1344,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1376,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1376,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1408,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1408,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1440,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1440,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1472,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1472,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1504,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1504,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1536,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1536,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1568,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1568,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1600,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1600,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1632,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1632,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1664,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1664,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1696,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1696,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1728,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1728,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1760,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1760,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1792,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1792,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1824,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1824,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1856,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1856,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1888,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1888,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1920,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1920,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1952,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1952,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1984,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 1984,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2016,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2016,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2048,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2048,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2080,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2080,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2112,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2112,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2144,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2144,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2176,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2176,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2208,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2208,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2240,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2240,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2272,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2272,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2304,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2304,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2336,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2336,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2368,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2368,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2400,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2400,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2432,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2432,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2464,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2464,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2496,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2496,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2528,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2528,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2560,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2560,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2592,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2592,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2624,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2624,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2656,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2656,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2688,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2688,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2720,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2720,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2752,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2752,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2784,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2784,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2816,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2816,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2848,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2848,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2880,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2880,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2912,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2912,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2944,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2944,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2976,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 2976,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3008,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3008,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3040,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3040,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3072,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3072,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3104,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3104,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3136,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3136,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3168,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3168,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3200,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3200,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3232,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3232,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3264,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3264,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3296,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3296,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3328,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3328,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3360,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3360,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3392,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3392,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3424,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3424,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3456,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3456,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3488,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3488,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3520,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3520,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3552,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3552,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3584,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3584,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3616,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3616,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3648,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3648,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3680,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3680,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3712,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3712,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3744,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3744,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3776,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3776,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3808,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3808,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3840,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3840,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3872,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3872,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3904,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3904,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3936,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3936,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3968,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 3968,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 4000,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 4000,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 4032,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 4032,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 4064,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 4064,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 4096,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "progress",
+        "after_workers": 4096,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "final",
+        "after_workers": 4096,
+        "device": 0,
+        "free_bytes": 20335296512,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "final",
+        "after_workers": 4096,
+        "device": 1,
+        "free_bytes": 266928128,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "after_pressure_free",
+        "after_workers": 4096,
+        "device": 0,
+        "free_bytes": 20337393664,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      },
+      {
+        "phase": "after_pressure_free",
+        "after_workers": 4096,
+        "device": 1,
+        "free_bytes": 20774977536,
+        "total_bytes": 21027028992,
+        "error_code": 0
+      }
+    ]
+  }
+}
