@@ -14,6 +14,41 @@
 
 namespace strata::core::conversation_detail {
 
+/// Private copy handles belong to the thread that creates them. Requests can use short-lived workers;
+/// leaving these handles alive after the worker exits gradually consumes device memory.
+struct CopyResources {
+    std::vector<cudaStream_t> streams;
+    std::vector<cudaEvent_t> events;
+
+    CopyResources() = default;
+    CopyResources(const CopyResources&) = delete;
+    CopyResources& operator=(const CopyResources&) = delete;
+    CopyResources(CopyResources&&) = delete;
+    CopyResources& operator=(CopyResources&&) = delete;
+
+    ~CopyResources() noexcept {
+        int previous = 0;
+        const bool restore_device = cudaGetDevice(&previous) == cudaSuccess;
+        const size_t devices = std::max(streams.size(), events.size());
+        for (size_t dev = 0; dev < devices; ++dev) {
+            const auto stream = dev < streams.size() ? streams[dev] : nullptr;
+            const auto event = dev < events.size() ? events[dev] : nullptr;
+            if (!stream && !event) continue;
+            // A failed device selection must not destroy another device's handles. Cleanup is best effort:
+            // CUDA can already be shutting down when a process-lifetime thread exits.
+            if (cudaSetDevice((int) dev) != cudaSuccess) continue;
+            if (event) (void) cudaEventDestroy(event);
+            if (stream) (void) cudaStreamDestroy(stream);
+        }
+        if (restore_device) (void) cudaSetDevice(previous);
+    }
+};
+
+inline CopyResources& copy_resources() {
+    thread_local CopyResources resources;
+    return resources;
+}
+
 /// Conversation snapshot / checkpoint copies go through a private non-blocking stream of the current device
 /// instead of the legacy (null) stream.  A plain cudaMemcpy is ordered against every blocking stream of the
 /// device, and while another thread captures a graph on one (a drafter or a stage worker), HIP refuses it with
@@ -24,9 +59,9 @@ inline cudaError_t private_stream(cudaStream_t& s) {
     int dev = 0;
     cudaError_t e = cudaGetDevice(&dev);
     if (e != cudaSuccess) return e;
-    thread_local std::vector<cudaStream_t> streams;
+    auto& streams = copy_resources().streams;
     if (dev < 0) dev = 0;
-    if ((size_t) dev >= streams.size()) streams.resize((size_t) dev + 1, nullptr);   // never destroyed: process lifetime
+    if ((size_t) dev >= streams.size()) streams.resize((size_t) dev + 1, nullptr);
     if (!streams[(size_t) dev]) {
         e = cudaStreamCreateWithFlags(&streams[(size_t) dev], cudaStreamNonBlocking);
         if (e != cudaSuccess) { streams[(size_t) dev] = nullptr; return e; }
@@ -106,9 +141,9 @@ inline cudaError_t order_after_queued() {
     int dev = 0;
     e = cudaGetDevice(&dev);
     if (e != cudaSuccess) return e;
-    thread_local std::vector<cudaEvent_t> events;
+    auto& events = copy_resources().events;
     if (dev < 0) dev = 0;
-    if ((size_t) dev >= events.size()) events.resize((size_t) dev + 1, nullptr);    // never destroyed: process lifetime
+    if ((size_t) dev >= events.size()) events.resize((size_t) dev + 1, nullptr);
     if (!events[(size_t) dev]) {
         e = cudaEventCreateWithFlags(&events[(size_t) dev], cudaEventDisableTiming);
         if (e != cudaSuccess) { events[(size_t) dev] = nullptr; return e; }
