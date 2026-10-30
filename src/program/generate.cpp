@@ -13846,7 +13846,7 @@ int main(int argc, char** argv) {
                 }();
                 const bool pr_on = piped && pr_piece > 0;
                 auto piece_now = [&]() -> int64_t {
-                    return pr_on ? strata::program::piped_read_piece(pr_piece, C)
+                    return pr_on ? (batch_on() ? strata::program::piped_read_piece(pr_piece, C) : 0)
                                  : strata::program::batch_read_piece(o.batch > 0, piped, !stages.empty(), batch_on(), C,
                                                                      yield_chunks);
                 };
@@ -13894,7 +13894,8 @@ int main(int argc, char** argv) {
                 int64_t piece = piece_now();
                 if (piece <= 0) return run(a0, b0);
                 for (int64_t q = a0; q < b0;) {
-                    const int64_t r = std::min(b0, q + piece);
+                    if (pr_on) piece = piece_now();
+                    const int64_t r = piece > 0 ? std::min(b0, q + piece) : b0;
                     const auto tq = Clock::now();
                     if (!run(q, r)) return false;
                     const double piece_ms = std::chrono::duration<double, std::milli>(Clock::now() - tq).count();
